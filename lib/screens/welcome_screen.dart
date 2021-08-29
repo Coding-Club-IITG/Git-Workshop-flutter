@@ -16,6 +16,13 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   AnimationController controller;
   Animation animation;
 
+  List<MaterialColor> colorizeColors = [
+    Colors.orange,
+    Colors.deepOrange,
+    Colors.yellow,
+    Colors.red,
+  ];
+
   @override
   void initState() {
     super.initState();
@@ -60,22 +67,39 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                     height: 60.0,
                   ),
                 ),
+                SizedBox(width: 20),
                 AnimatedTextKit(
+                  isRepeatingAnimation: true,
                   animatedTexts: [
-                    RotateAnimatedText(
-                      'BE AWESOME',
+                    ColorizeAnimatedText(
+                      'Be Awesome',
                       textStyle: kAnimatedTextStyle,
+                      colors: colorizeColors,
                     ),
-                    RotateAnimatedText(
-                      'BE PRODUCTIVE',
-                      textStyle: kAnimatedTextStyle.copyWith(
-                        fontSize: 30.0,
-                      ),
-                    ),
-                    RotateAnimatedText(
-                      'BE YOURSELF',
+                    ColorizeAnimatedText(
+                      'Be Productive',
                       textStyle: kAnimatedTextStyle,
+                      colors: colorizeColors,
                     ),
+                    ColorizeAnimatedText(
+                      'Be Yourself',
+                      textStyle: kAnimatedTextStyle,
+                      colors: colorizeColors,
+                    ),
+                    //     RotateAnimatedText(
+                    //       'BE AWESOME',
+                    //       textStyle: kAnimatedTextStyle,
+                    //     ),
+                    //     RotateAnimatedText(
+                    //       'BE PRODUCTIVE',
+                    //       textStyle: kAnimatedTextStyle.copyWith(
+                    //         fontSize: 30.0,
+                    //       ),
+                    //     ),
+                    //     RotateAnimatedText(
+                    //       'BE YOURSELF',
+                    //       textStyle: kAnimatedTextStyle,
+                    //     ),
                   ],
                   repeatForever: true,
                 ),

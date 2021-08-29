@@ -40,7 +40,8 @@ class _TodoScreenState extends State<TodoScreen> {
       appBar: AppBar(
         title: Text('Things TO DO'),
         // backgroundColor: Colors.deepPurpleAccent,
-        backgroundColor: Colors.deepOrange[200],
+        // backgroundColor: Colors.deepOrange[200],
+        backgroundColor: Colors.deepOrangeAccent,
         actions: [
           IconButton(
               icon: Icon(Icons.close),

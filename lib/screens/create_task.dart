@@ -18,7 +18,8 @@ class _TodoCreateState extends State<TodoCreate> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurpleAccent,
+        // backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Colors.deepOrangeAccent,
         title: Text('Create a Task'),
       ),
       backgroundColor: Colors.white,
