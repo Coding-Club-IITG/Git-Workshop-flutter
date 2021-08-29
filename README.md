@@ -5,12 +5,28 @@ All the Best!***
 
 # ☑️TODO App
 
-A simple Flutter App to add Tasks with User Authentication from Firebase.
+<!-- A simple Flutter App to add Tasks with User Authentication from Firebase. -->
+## ⚙️ Tech-Stack
+The application is built entirely with Flutter. For the backend services, we have made use of Firebase.
 
 ## Features:
  - Implemented Text Animations
  - Used Firestore and Firebase Authentication
  - Realtime Updates in Firebase NoSQL Database
+
+## 🏃🏻 Getting Started
+### Prerequisites:
+* Get Flutter up and running. For this purpose visit - [Flutter docs](https://flutter.dev/docs/get-started/install).
+
+### Building from source:
+* If you are using an IDE like [Android Studio](https://developer.android.com/studio), you may use suitable GUI/hotkeys. Here is how you can work things from the terminal.
+
+    ```
+    git clone https://github.com/jash-desai/insta-clone.git
+    cd insta-clone
+    flutter run
+    ```
+</br>
 
 ## Screenshots:
 
