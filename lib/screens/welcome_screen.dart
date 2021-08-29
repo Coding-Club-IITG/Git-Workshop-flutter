@@ -16,6 +16,13 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   AnimationController controller;
   Animation animation;
 
+  List<MaterialColor> colorizeColors = [
+    Colors.purple,
+    Colors.blue,
+    Colors.yellow,
+    Colors.red,
+  ];
+
   @override
   void initState() {
     super.initState();
@@ -24,6 +31,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       duration: Duration(seconds: 1),
       vsync: this,
     );
+
 
     animation = ColorTween(begin: Colors.blueGrey, end: Colors.white)
         .animate(controller);
@@ -62,14 +70,20 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 ),
                 AnimatedTextKit(
                   animatedTexts: [
-                    RotateAnimatedText('BE AWESOME',
-                        textStyle: kAnimatedTextStyle),
-                    RotateAnimatedText('BE PRODUCTIVE',
-                        textStyle: kAnimatedTextStyle.copyWith(fontSize: 30.0)),
-                    RotateAnimatedText('BE YOURSELF',
-                        textStyle: kAnimatedTextStyle),
+                    ColorizeAnimatedText('BE AWESOME',
+                        textStyle: kAnimatedTextStyle,
+                        colors: colorizeColors,
+                    ),
+                    ColorizeAnimatedText('BE PRODUCTIVE',
+                        textStyle: kAnimatedTextStyle,
+                      colors: colorizeColors,
+                    ),
+                    ColorizeAnimatedText('BE YOURSELF',
+                        textStyle: kAnimatedTextStyle,
+                      colors: colorizeColors,
+                    ),
                   ],
-                  repeatForever: true,
+                  isRepeatingAnimation: true,
                 ),
               ],
             ),
