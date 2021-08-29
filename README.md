@@ -9,7 +9,7 @@ All the Best!***
 ## ⚙️ Tech-Stack
 The application is built entirely with Flutter. For the backend services, we have made use of Firebase.
 
-## Features:
+## ✨ Features:
  - Implemented Text Animations
  - Used Firestore and Firebase Authentication
  - Realtime Updates in Firebase NoSQL Database
