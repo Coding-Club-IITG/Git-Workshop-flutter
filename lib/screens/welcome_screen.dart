@@ -91,7 +91,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               },
             ),
             RoundedButton(
-              color: Colors.deepOrnage[100],
+              color: Colors.deepOrange[100],
               text: 'Sign In With Google',
               onPressed: () {
                 Navigator.pushNamed(context, LoginScreen.id);
