@@ -41,13 +41,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 height: 48.0,
               ),
               TextField(
-                  keyboardType: TextInputType.emailAddress,
-                  textAlign: TextAlign.center,
-                  onChanged: (value) {
-                    email = value;
-                  },
-                  decoration: kTextFieldDecoration.copyWith(
-                      hintText: 'Enter your email')),
+                keyboardType: TextInputType.emailAddress,
+                textAlign: TextAlign.center,
+                onChanged: (value) {
+                  email = value;
+                },
+                decoration:
+                    kTextFieldDecoration.copyWith(hintText: 'Enter your email'),
+              ),
               SizedBox(
                 height: 8.0,
               ),
@@ -67,9 +68,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 color: Colors.blueAccent,
                 text: 'Register',
                 onPressed: () async {
-                  setState(() {
-                    showSpinner = true;
-                  });
+                  setState(
+                    () {
+                      showSpinner = true;
+                    },
+                  );
                   try {
                     final newUser = await _auth.createUserWithEmailAndPassword(
                         email: email, password: password);

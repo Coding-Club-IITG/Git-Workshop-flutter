@@ -18,8 +18,9 @@ class _TodoCreateState extends State<TodoCreate> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.deepPurpleAccent,
-          title: Text('Create a Task')),
+        backgroundColor: Colors.deepPurpleAccent,
+        title: Text('Create a Task'),
+      ),
       backgroundColor: Colors.white,
       body: Center(
         child: Padding(
@@ -28,7 +29,9 @@ class _TodoCreateState extends State<TodoCreate> {
             autofocus: true,
             controller: controller,
             decoration: kTextFieldDecoration.copyWith(
-                labelText: 'What do you want TODO?', hintText: ""),
+              labelText: 'What do you want ToDo?',
+              hintText: "",
+            ),
           ),
         ),
       ),
