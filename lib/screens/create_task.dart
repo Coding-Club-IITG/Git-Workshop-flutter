@@ -37,7 +37,8 @@ class _TodoCreateState extends State<TodoCreate> {
       ),
       floatingActionButton: RoundedButton(
         text: 'Add task!',
-        color: Colors.deepPurple,
+        // color: Colors.deepPurple,
+        color: Colors.deepOrangeAccent,
         onPressed: () async {
           //Creating a new task
           await collection.add({'name': controller.text, 'completed': false});

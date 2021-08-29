@@ -39,7 +39,8 @@ class _TodoScreenState extends State<TodoScreen> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Things TO DO'),
-        backgroundColor: Colors.deepPurpleAccent,
+        // backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Colors.deepOrange[200],
         actions: [
           IconButton(
               icon: Icon(Icons.close),
@@ -64,14 +65,16 @@ class _TodoScreenState extends State<TodoScreen> {
               return ListView(
                 children: snapshot.data.docs.map((DocumentSnapshot document) {
                   return CheckboxListTile(
-                      checkColor: Colors.white,
-                      activeColor: Colors.deepPurple,
-                      title: Text(document['name']),
-                      value: document['completed'],
-                      onChanged: (newValue) => _firestore
-                          .collection('tasks')
-                          .doc()
-                          .update({'completed': newValue}));
+                    checkColor: Colors.white,
+                    // activeColor: Colors.deepPurple,
+                    activeColor: Colors.deepOrangeAccent,
+                    title: Text(document['name']),
+                    value: document['completed'],
+                    onChanged: (newValue) => _firestore
+                        .collection('tasks')
+                        .doc()
+                        .update({'completed': newValue}),
+                  );
                 }).toList(),
               );
           }
@@ -79,7 +82,8 @@ class _TodoScreenState extends State<TodoScreen> {
       ),
       floatingActionButton: RoundedButton(
         text: 'Add Task!',
-        color: Colors.deepPurple,
+        // color: Colors.deepPurple,
+        color: Colors.deepOrangeAccent,
         onPressed: () => Navigator.pushNamed(context, TodoCreate.id),
       ),
     );

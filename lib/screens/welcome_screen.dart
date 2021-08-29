@@ -62,12 +62,20 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 ),
                 AnimatedTextKit(
                   animatedTexts: [
-                    RotateAnimatedText('BE AWESOME',
-                        textStyle: kAnimatedTextStyle),
-                    RotateAnimatedText('BE PRODUCTIVE',
-                        textStyle: kAnimatedTextStyle.copyWith(fontSize: 30.0)),
-                    RotateAnimatedText('BE YOURSELF',
-                        textStyle: kAnimatedTextStyle),
+                    RotateAnimatedText(
+                      'BE AWESOME',
+                      textStyle: kAnimatedTextStyle,
+                    ),
+                    RotateAnimatedText(
+                      'BE PRODUCTIVE',
+                      textStyle: kAnimatedTextStyle.copyWith(
+                        fontSize: 30.0,
+                      ),
+                    ),
+                    RotateAnimatedText(
+                      'BE YOURSELF',
+                      textStyle: kAnimatedTextStyle,
+                    ),
                   ],
                   repeatForever: true,
                 ),
@@ -77,21 +85,24 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               height: 48.0,
             ),
             RoundedButton(
-              color: Colors.deepPurple,
+              // color: Colors.deepPurple,
+              color: Colors.deepOrangeAccent,
               text: 'Log In',
               onPressed: () {
                 Navigator.pushNamed(context, LoginScreen.id);
               },
             ),
             RoundedButton(
-              color: Colors.deepPurple[400],
+              // color: Colors.deepPurple[400],
+              color: Colors.deepOrangeAccent[100],
               text: 'Register',
               onPressed: () {
                 Navigator.pushNamed(context, RegistrationScreen.id);
               },
             ),
             RoundedButton(
-              color: Colors.deepPurple[100],
+              // color: Colors.deepPurple[100],
+              color: Colors.deepOrange[100],
               text: 'Sign In With Google',
               onPressed: () {
                 Navigator.pushNamed(context, LoginScreen.id);
