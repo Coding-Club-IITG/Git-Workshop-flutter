@@ -28,7 +28,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     );
 
 
-    animation = ColorTween(begin: Colors.white, end: Colors.white)
+    animation = ColorTween(begin: Colors.blue, end: Colors.white)
         .animate(controller);
 
     controller.forward();
