@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:todoapp/screens/todo_screen.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
 class RegistrationScreen extends StatefulWidget {
   static String id = 'registration_screen';
@@ -80,7 +81,25 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       showSpinner = false;
                     });
                   } catch (e) {
-                    print(e);
+                    Alert(
+                      context: context,
+                      type: AlertType.warning,
+                      title: "OOPS!",
+                      desc: e.toString(),
+                      buttons: [
+                        DialogButton(
+                          child: Text(
+                            "OKAY",
+                            style: TextStyle(color: Colors.white, fontSize: 20),
+                          ),
+                          onPressed: () => Navigator.pop(context),
+                          color: Colors.deepPurple[400],
+                        ),
+                      ],
+                    ).show();
+                    setState(() {
+                      showSpinner = false;
+                    });
                   }
                 },
               ),
