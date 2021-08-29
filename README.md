@@ -7,6 +7,15 @@ All the Best!***
 
 A simple Flutter App to add Tasks with User Authentication from Firebase.
 
+## Setup App in Your PC
+ - Clone this repository in your device
+ - Open the task folder in Android Studio or any other IDE of choice
+ - Run "flutter pub get" command in Terminal to get dependencies 
+
+## Build the app
+ - Use Android Studio to get an emulator
+ - Run "flutter run" command in Terminal to Build and Run the app in emulator
+
 ## Features:
  - Implemented Text Animations
  - Used Firestore and Firebase Authentication
