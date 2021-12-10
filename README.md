@@ -14,10 +14,10 @@ A simple Flutter App to add Tasks with User Authentication from Firebase.
 
 ## Screenshots:
 
-![](./screenshots/img1.jpg)
-![](./screenshots/img2.jpg)
-![](./screenshots/img3.jpg)
-![](./screenshots/img4.jpg)
+![](./screenshots/Screenshot_2021-12-10-10-03-55-643_com.gunjan.todoapp.jpg)
+![](./screenshots/Screenshot_2021-12-10-10-04-53-195_com.gunjan.todoapp.jpg)
+![](./screenshots/Screenshot_2021-12-10-10-06-10-835_com.gunjan.todoapp.jpg)
+![](./screenshots/Screenshot_2021-12-10-10-06-28-847_com.gunjan.todoapp.jpg)
 
 ### TODO's for the future:
 1. Implement Google Sign In
