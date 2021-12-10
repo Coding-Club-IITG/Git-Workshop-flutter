@@ -13,11 +13,11 @@ A simple Flutter App to add Tasks with User Authentication from Firebase.
  - Realtime Updates in Firebase NoSQL Database
 
 ## Screenshots:
+![Screenshot_2021-12-10-10-03-55-643_com gunjan todoapp](https://user-images.githubusercontent.com/59107332/145534522-31fb67c1-13cb-4880-811e-f0ae8cec79f0.jpg)
+![Screenshot_2021-12-10-10-04-53-195_com gunjan todoapp](https://user-images.githubusercontent.com/59107332/145534524-da68695a-cdb9-4752-8337-25534261dca9.jpg)
+![Screenshot_2021-12-10-10-06-10-835_com gunjan todoapp](https://user-images.githubusercontent.com/59107332/145534528-1bbc98c8-b126-4559-b349-7b9733873654.jpg)
+![Screenshot_2021-12-10-10-06-28-847_com gunjan todoapp](https://user-images.githubusercontent.com/59107332/145534534-ed92eadb-008f-4e1c-9b5f-5d7af2d0b313.jpg)
 
-![](./screenshots/img1.jpg)
-![](./screenshots/img2.jpg)
-![](./screenshots/img3.jpg)
-![](./screenshots/img4.jpg)
 
 ### TODO's for the future:
 1. Implement Google Sign In
