@@ -77,21 +77,21 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               height: 48.0,
             ),
             RoundedButton(
-              color: Colors.deepPurple,
+              color: Colors.orange[300],
               text: 'Log In',
               onPressed: () {
                 Navigator.pushNamed(context, LoginScreen.id);
               },
             ),
             RoundedButton(
-              color: Colors.deepPurple[400],
+              color: Colors.orange[700],
               text: 'Register',
               onPressed: () {
                 Navigator.pushNamed(context, RegistrationScreen.id);
               },
             ),
             RoundedButton(
-              color: Colors.deepPurple[100],
+              color: Colors.green,
               text: 'Sign In With Google',
               onPressed: () {
                 Navigator.pushNamed(context, LoginScreen.id);
