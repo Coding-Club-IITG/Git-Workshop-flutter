@@ -18,7 +18,7 @@ class _TodoCreateState extends State<TodoCreate> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.deepPurpleAccent,
+          backgroundColor: Colors.orange[300],
           title: Text('Create a Task')),
       backgroundColor: Colors.white,
       body: Center(
@@ -34,7 +34,7 @@ class _TodoCreateState extends State<TodoCreate> {
       ),
       floatingActionButton: RoundedButton(
         text: 'Add task!',
-        color: Colors.deepPurple,
+        color: Colors.orange[600],
         onPressed: () async {
           //Creating a new task
           await collection.add({'name': controller.text, 'completed': false});
