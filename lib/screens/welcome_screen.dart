@@ -62,11 +62,11 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 ),
                 AnimatedTextKit(
                   animatedTexts: [
-                    RotateAnimatedText('BE AWESOME',
+                    FadeAnimatedText('BE AWESOME',
                         textStyle: kAnimatedTextStyle),
-                    RotateAnimatedText('BE PRODUCTIVE',
+                    FadeAnimatedText('BE PRODUCTIVE',
                         textStyle: kAnimatedTextStyle.copyWith(fontSize: 30.0)),
-                    RotateAnimatedText('BE YOURSELF',
+                    FadeAnimatedText('BE YOURSELF',
                         textStyle: kAnimatedTextStyle),
                   ],
                   repeatForever: true,
