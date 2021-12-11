@@ -25,7 +25,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       vsync: this,
     );
 
-    animation = ColorTween(begin: Colors.blueGrey, end: Colors.white)
+    animation = ColorTween(begin: Colors.orange[100], end: Colors.white)
         .animate(controller);
 
     controller.forward();
