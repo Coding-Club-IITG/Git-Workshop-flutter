@@ -1,9 +1,9 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:flutter/material.dart';
+import 'package:todoapp/components/rounded_button.dart';
 import 'package:todoapp/constants.dart';
 import 'package:todoapp/screens/login_screen.dart';
 import 'package:todoapp/screens/registration_screen.dart';
-import 'package:flutter/material.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:todoapp/components/rounded_button.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static String id = 'welcome_screen';
@@ -84,7 +84,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               },
             ),
             RoundedButton(
-              color: Colors.deepPurple[400],
+              color: Colors.deepPurple,
               text: 'Register',
               onPressed: () {
                 Navigator.pushNamed(context, RegistrationScreen.id);
