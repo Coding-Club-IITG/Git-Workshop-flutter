@@ -51,30 +51,35 @@ class _WelcomeScreenState extends State<WelcomeScreen>
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Row(
-              children: [
-                Hero(
-                  tag: 'logo',
-                  child: Container(
-                    child: Image.asset('images/logo.png'),
-                    height: 60.0,
+            Container(
+              height: 120,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Hero(
+                    tag: 'logo',
+                    child: Container(
+                      child: Image.asset('images/logo.png'),
+                      height: 60.0,
+                    ),
                   ),
-                ),
-                AnimatedTextKit(
-                  animatedTexts: [
-                    RotateAnimatedText('BE AWESOME',
-                        textStyle: kAnimatedTextStyle),
-                    RotateAnimatedText('BE PRODUCTIVE',
-                        textStyle: kAnimatedTextStyle.copyWith(fontSize: 30.0)),
-                    RotateAnimatedText('BE YOURSELF',
-                        textStyle: kAnimatedTextStyle),
-                  ],
-                  repeatForever: true,
-                ),
-              ],
+                  AnimatedTextKit(
+                    animatedTexts: [
+                      RotateAnimatedText('BE AWESOME',
+                          textStyle: kAnimatedTextStyle),
+                      RotateAnimatedText('BE PRODUCTIVE',
+                          textStyle:
+                              kAnimatedTextStyle.copyWith(fontSize: 30.0)),
+                      RotateAnimatedText('BE YOURSELF',
+                          textStyle: kAnimatedTextStyle),
+                    ],
+                    repeatForever: true,
+                  ),
+                ],
+              ),
             ),
             SizedBox(
-              height: 48.0,
+              height: 28.0,
             ),
             RoundedButton(
               color: Colors.deepPurple,
