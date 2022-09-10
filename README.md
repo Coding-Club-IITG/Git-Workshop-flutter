@@ -3,7 +3,7 @@
 ***Once you clone the repository make sure to create a Firebase app and do the relevant things (i.e. registering the app on Firebase, downloading json file from Firebase console and so on. If you take up a issue which can be solved without doing the Firebase stuff then you can commit by fixing that bug itself. I have tried to not get into the mess of setting up Firebase as much as possible for these issues.
 All the Best!***
 
-![flutter-git-task](https://socialify.git.ci/codingiitg/flutter-git-task/image?language=1&owner=1&stargazers=1&theme=Light)
+![flutter-git-task](https://socialify.git.ci/Coding-Club-IITG/Git-Workshop-flutter/image?language=1&owner=1&stargazers=1&theme=Light)
 
 # ☑️TODO App
 
